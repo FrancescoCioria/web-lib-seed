@@ -2,10 +2,11 @@
   "name": "web-lib-seed",
   "version": "0.0.1",
   "description": "",
-  "main": "lib",
+  "main": "index.js",
   "scripts": {
     "test": "./node_modules/karma/bin/karma start",
     "build": "babel --loose --stage 0 --out-dir lib src",
+    "prerelease": "npm run build",
     "lint": "eslint src"
   },
   "repository": {
