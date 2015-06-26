@@ -1,9 +1,23 @@
 import React from 'react';
 
-const example = (
-  <div>
-    <p>replace with your component</p>
-  </div>
-);
+const Example = React.createClass({
 
-React.render(example, document.getElementById('container'));
+  propTypes: {},
+
+  getInitialState() {
+    return {
+      value: 'replace me with your component'
+    };
+  },
+
+  render() {
+    return (
+      <div>
+        <p>{this.state.value}</p>
+      </div>
+    );
+  }
+
+});
+
+React.render(<Example />, document.getElementById('container'));
